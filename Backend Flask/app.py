@@ -23,29 +23,6 @@ client = OpenAI(api_key="sk-proj-xxxx")
 
 arango_graph = ArangoGraph(db)
 
-VALID_NX_ALGORITHMS = {
-    "community detection": [
-        "networkx.algorithms.community.girvan_newman",
-        "networkx.algorithms.community.label_propagation_communities",
-        "networkx.algorithms.community.louvain_communities",
-    ],
-    "centrality": [
-        "nx.degree_centrality",
-        "nx.betweenness_centrality",
-        "nx.pagerank",
-        "nx.closeness_centrality",
-    ],
-    "shortest path": [
-        "nx.shortest_path",
-        "nx.dijkstra_path",
-        "nx.astar_path",
-    ],
-    "clustering": [
-        "nx.clustering",
-        "nx.average_clustering",
-    ],
-}
-
 def get_table(query):
     prompt = """
     You are tasked with formatting the query response into a clean, structured table in HTML format. Remember the table is structured and contains only the information available in the query. Do not write anything explicitly from your side.
@@ -260,8 +237,6 @@ def text_to_nx_algorithm_to_text(query):
     Be very precise on the NetworkX algorithm you select to answer this query. Think step by step.
 
     Only assume that networkx is installed, and other base python dependencies.
-
-    Here is some of the valid algorithms which can be used {VALID_NX_ALGORITHMS}
 
     Always set the last variable as `FINAL_RESULT`, which represents the answer to the original query.
 
