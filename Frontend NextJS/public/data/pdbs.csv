@@ -1,0 +1,18 @@
+id,struct_id,pdb,chain_id,accession,title,pubmed_id,exp_method,deposition_date,ligand_id
+1963464,5388,4U7Z,A,Q02750,Mitogen-Activated Protein Kinase Kinase (MEK1) bound to G805,25193232,X-RAY DIFFRACTION,7/31/2014,3EW
+1963465,4746,6UML,C,Q96SW2,Structural Basis for Thalidomide Teratogenicity Revealed by the Cereblon-DDB1-SALL4-Pomalidomide Complex,32251415,X-RAY DIFFRACTION,10/9/2019,Y70
+1963466,4750,6JZU,B,Q8KPT4,The crystal structure of acyl-acyl carrier protein (acyl-ACP) reductase (AAR) in complex with aldehyde deformylating oxygenase (ADO),32251275,X-RAY DIFFRACTION,5/3/2019,PL3
+1963467,4750,6JZY,B,Q8KPT4,Crystal structure of AAR with NADPH and stearyl in complex with ADO binding a long chain carbohydrate,32251275,X-RAY DIFFRACTION,5/4/2019,PL3
+1963468,4750,6JZZ,B,Q8KPT4,The crystal structure of AAR-C294S in complex with ADO.,32251275,X-RAY DIFFRACTION,5/4/2019,PL3
+1963469,334,7BQY,C,,THE CRYSTAL STRUCTURE OF COVID-19 MAIN PROTEASE IN COMPLEX WITH AN INHIBITOR N3 at 1.7 angstrom,32272481,X-RAY DIFFRACTION,3/26/2020,10
+1963470,2416,6JQX,A,P0CT50,Crystal structure of a hydrogenase from Trichosporon moniliiforme,,X-RAY DIFFRACTION,4/1/2019,SAL
+1963471,2416,6UX1,A,P00918,Carbonic Anhydrase II Complexed with Salicylic Acid,32244293,X-RAY DIFFRACTION,11/6/2019,SAL
+1963472,3998,6KSI,A,A0A0U1MWF9,Staphylococcus aureus lipase - native,32214208,X-RAY DIFFRACTION,8/24/2019,OCA
+1963473,2521,6RL9,A,P00918,Human Carbonic Anhydrase II in complex with 4-Aminobenzenesulfonamide,32230853,X-RAY DIFFRACTION,5/1/2019,SAN
+1963474,1252,6WN8,A,A0A1Y0PUH0,2.70 Angstrom Resolution Crystal Structure of Uracil Phosphoribosyl Transferase from Klebsiella pneumoniae,,X-RAY DIFFRACTION,4/22/2020,BDF
+1963475,845,6R5O,B,Q9I311,The crystal structure the Glycoside Hydrolase BglX inactive mutant D286N from P. aeruginosa in complex with two glucose molecules,31877028,X-RAY DIFFRACTION,3/25/2019,BGC
+1963476,845,6R5P,B,Q9I311,The crystal structure of Glycoside Hydrolase BglX inactive mutant D286N from P. aeruginosa in complex with glucose,31877028,X-RAY DIFFRACTION,3/25/2019,BGC
+1963477,845,6R5R,B,Q9I311,The crystal structure of Glycoside Hydrolase BglX inactive mutant D286N from P. aeruginosa in complex with cellobiose,31877028,X-RAY DIFFRACTION,3/25/2019,BGC
+1963478,845,6R5U,B,Q9I311,The crystal structure of Glycoside Hydrolase BglX inactive mutant from P. aeruginosa in complex with laminaritriose,31877028,X-RAY DIFFRACTION,3/25/2019,BGC
+1963479,845,6RH4,A,P00918,Human Carbonic Anhydrase II in complex with 4-Nitrobenzenesulfonamide.,32230853,X-RAY DIFFRACTION,4/18/2019,BGC
+1963480,845,6RIT,A,P00918,Human Carbonic Anhydrase II in complex with 2-Fluorobenzenesulfonamide,32230853,X-RAY DIFFRACTION,4/25/2019,BGC
