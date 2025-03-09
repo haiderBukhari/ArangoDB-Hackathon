@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 // import { LayoutDashboard, Camera, BarChart2, User2, Settings } from 'lucide-react'
-// import Link from 'next/link'
+
 import { Card } from '@/components/ui/card'
 // import { Button } from '@/components/ui/button'
 // import { PerformanceChart } from './performance-chart'
