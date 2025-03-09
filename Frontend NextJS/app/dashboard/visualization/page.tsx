@@ -126,18 +126,14 @@ export default function VisualizationsPage() {
           <AlertDescription className="text-blue-600">
             <p className="mb-2">Note: The actual datasets are much larger than whats displayed here:</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
-              <li>structures.csv: 8,997 rows</li>
+              <li>structures.csv: 258,997 rows</li>
               <li>act_table_fulls.csv: 20,979 rows</li>
               <li>approvals.csv: 3,916 rows</li>
               <li>pdbs.csv: 5,577 rows</li>
               <li>faers.csv: 364,936 rows</li>
             </ul>
             <p className="mt-2">
-              You can find the complete datasets on my GitHub for full visualization at:{" "}
-              <a href="https://github.com/dkdkd" className="underline hover:text-blue-800">
-                dkdkd
-              </a>
-              . For performance reasons, only a small sample is shown here.
+              For performance reasons, only a small sample is shown here.
             </p>
           </AlertDescription>
         </Alert>
@@ -199,13 +195,15 @@ export default function VisualizationsPage() {
               <Button variant="ghost" size="sm" onClick={toggleExpanded} className="flex items-center gap-1">
                 {expanded ? (
                   <>
-                    <ChevronUp className="h-4 w-4" />
-                    Show Less
+                                      <ChevronDown className="h-4 w-4" />
+                    Show More
+
                   </>
                 ) : (
                   <>
-                    <ChevronDown className="h-4 w-4" />
-                    Show More
+                                      <ChevronUp className="h-4 w-4" />
+                    Show Less
+
                   </>
                 )}
               </Button>

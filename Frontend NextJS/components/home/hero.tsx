@@ -13,8 +13,7 @@ export default function Hero() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-12">
               <div className="w-34 font-semibold flex text-xl text-gray-900">
-                <Image src={'/integry.svg'} height={30} width={30} className="mr-2" alt="integry logo"></Image>
-                Integry
+                <Image src={'/arangodb.png'} height={80} width={80} className="mr-2" alt="integry logo"></Image>
               </div>
               <div className="hidden md:flex items-center space-x-8">
                 <a href="#feature" className="text-sm text-gray-600 hover:text-gray-900">Features</a>

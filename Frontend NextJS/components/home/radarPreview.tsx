@@ -11,14 +11,14 @@ const RadarPreview = () => {
             <div className='relative flex h-96 md:w-[90%] flex-col items-center justify-center space-y-4 overflow-hidden px-4 bg-[#F8F8F9] rounded-3xl'>
                 <div className="mx-auto w-full max-w-3xl ">
                     <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0">
-                        <IconContainer text="Automated Task Management" delay={0.2} icon={<Calculator className="h-8 w-8 text-teal-500" />} />
+                        <IconContainer text="Interactive Research Setup" delay={0.2} icon={<Calculator className="h-8 w-8 text-teal-500" />} />
                         <IconContainer
                             delay={0.4}
                             text="Interactive Task Setup"
                             icon={<BookOpen className="h-8 w-8 text-indigo-500" />}
                         />
                         <IconContainer
-                            text="AI-Powered Problem Solving"
+                            text="AI-Powered Molecular Analysis"
                             delay={0.3}
                             icon={<Brain className="h-8 w-8 text-purple-600" />}
                         />
@@ -27,12 +27,12 @@ const RadarPreview = () => {
                 <div className="mx-auto w-full max-w-md">
                     <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0">
                         <IconContainer
-                            text="Real-Time Task Monitoring"
+                            text="Real-Time Data Monitoring"
                             delay={0.5}
                             icon={<ChartBar className="h-8 w-8 text-blue-500" />}
                         />
                         <IconContainer
-                            text="Adaptive Learning Paths"
+                            text="Adaptive Learning Models"
                             icon={<HiPuzzlePiece className="h-8 w-8 text-yellow-500" />}
                             delay={0.8}
                         />
@@ -47,7 +47,7 @@ const RadarPreview = () => {
                         />
                         <IconContainer
                             delay={0.7}
-                            text="Automating Task"
+                            text="Automated Discovery Pipelines"
                             icon={<HiDocumentReport className="h-8 w-8 text-orange-500" />}
                         />
                     </div>

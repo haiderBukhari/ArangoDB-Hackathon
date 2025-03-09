@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Integry Langchain Bot",
-  description: "Integry Langchain Bot",
+  title: "ArangoDB Bot",
+  description: "ArangoDB Bot",
 };
 
 export default function RootLayout({

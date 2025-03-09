@@ -4,34 +4,34 @@ import { Card } from "@/components/ui/card";
 const TimeSavingsUI = () => {
   const timeCards = [
     {
-      hours: "Interactive",
+      hours: "Interactive ",
       color: "text-teal-500",
-      title: "Real-time Response"
+      title: "Real-time Query Responses"
     },
     {
-      hours: "Analytical",
+      hours: "Analytical ",
       color: "text-blue-500",
-      title: "Data Analysis"
+      title: "Advanced Biomedical Data Analysis"
     },
     {
       hours: "Exploratory",
       color: "text-green-500",
-      title: "Exploration Mode"
+      title: "In-Depth Drug Discovery Exploration"
     },
     {
       hours: "Automated",
       color: "text-purple-500",
-      title: "Automated Task"
+      title: "Streamlined Research & Data Processing"
     },
     {
       hours: "UI",
       color: "text-yellow-500",
-      title: "Interactive UI"
+      title: "User-Friendly & Interactive Dashboard"
     },
     {
       hours: "Customized",
       color: "text-red-500",
-      title: "User Customization"
+      title: "Tailored Insights & Research Optimization"
     }
   ];
 
@@ -40,11 +40,12 @@ const TimeSavingsUI = () => {
       <div className="space-y-8 max-w-7xl mx-auto bg-[#F8F8F9] px-10 py-20 rounded-3xl">
         <div className="text-center space-y-4 pb-3">
           <h1 className="text-4xl md:text-5xl font-bold">
-            Maximize Your Automation Task:
+          Maximize Your AI-Powered Drug Discovery Efficiency
           </h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Tired of traditional methods that waste time? With AI-powered Langchain Tool with Integry you can automate task with the support of integry.
-          </p>
+          Say goodbye to manual research! Our AI-driven drug discovery bot automates complex biomedical tasks, accelerating insights with intelligent automation.
+
+</p>
         </div>
 
         {/* Cards Grid */}
@@ -72,14 +73,7 @@ const TimeSavingsUI = () => {
         {/* Footer Text */}
         <div className="text-center pt-5">
           <p className="text-emerald-500 font-medium">
-            = A lot of manual efforts will save{' '}
-            <span className="text-gray-600">
-              with the help of{' '}
-            </span>
-            <span className="font-semibold">
-              Integry Langchain Bot
-            </span>
-          </p>
+          Eliminate manual effort with our AI Drug Discovery Agent!          </p>
         </div>
       </div>
     </div>

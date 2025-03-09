@@ -39,8 +39,8 @@ export function QuerySuggestionsDialog({ isOpen, onClose, onSelectQuery }: Query
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="sm:max-w-[600px] max-h-[80vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-xl font-semibold">Suggested Queries</DialogTitle>
-          <div className="relative mt-4">
+          <DialogTitle className="text-xl font-semibold mb-3">Suggested Queries</DialogTitle>
+          <div className="relative mt-8">
             <input
               type="text"
               placeholder="Search queries..."

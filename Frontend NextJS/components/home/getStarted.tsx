@@ -13,12 +13,14 @@ export default function GetStarted() {
               GET STARTED TODAY
             </h2>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-              Ready to Unlock To <span className="whitespace-nowrap">Automating Task?</span>
+              Ready to Revolutionize Drug Discovery?
             </h1>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stop waiting for the perfect moment to excel in your tasks. Take control of your workflow today with the power of Integry AI and LangChain. Automate, optimize, and streamline your processes with personalized tools and intelligent automation. </p>
+            Dont wait for breakthroughs—accelerate your research now. Leverage AI-powered automation with LangChain and Integry to optimize workflows, analyze complex data, and streamline drug discovery processes.
+
+          </p>
 
           <div className="flex justify-center">
             <Link href="/dashboard/chat">

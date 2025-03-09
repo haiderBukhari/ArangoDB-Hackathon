@@ -96,6 +96,18 @@ const Page = () => {
     setMessages(updatedMessages)
     setInputValue("")
 
+    const storedData = JSON.parse(localStorage.getItem("integry-api") || "{}");
+    const filterUserMessages = updatedMessages.filter(message => message.sender === 'User')
+
+    const newLocalStorageData = {
+      ...storedData,
+      promptscount: 0,
+      messages: filterUserMessages.slice(-3),
+    };
+
+    localStorage.setItem("integry-api", JSON.stringify(newLocalStorageData));
+
+
     try {
       // First API call for text response
       const initialResponse = await axios.post(
@@ -196,7 +208,7 @@ const Page = () => {
               <div className="flex gap-2">
                 <input
                   type="text"
-                  placeholder="Message Langchain Integry Bot"
+                  placeholder="Message ArangoDB Bot"
                   className="w-full bg-[#F1F1F1] h-[60px] text-black outline-none focus:ring-2 focus:ring-primary px-4 rounded-xl pr-12 border-2 border-gray-300"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
@@ -225,30 +237,22 @@ const Page = () => {
                 </TooltipProvider>
               </div>
               <div
-                className={`rounded-full absolute right-[70px] bottom-2 cursor-pointer hover:opacity-70 p-1.5 ${
-                  inputValue.trim() !== "" ? "bg-primary" : "bg-gray-600"
-                }`}
+                className={`rounded-full absolute right-[70px] bottom-2 cursor-pointer hover:opacity-70 p-1.5 ${inputValue.trim() !== "" ? "bg-primary" : "bg-gray-600"
+                  }`}
                 onClick={() => handleSendMessage()}
               >
                 <Send className="text-white" size={20} />
               </div>
             </div>
             <p className="h-[60px] text-[#111] leading-6 w-full max-w-[600px] mt-5 text-center px-4 rounded-xl">
-              The Integry Langchain Bot supports over 300 tools, streamlining integration and reducing developer effort
-              for AI-driven products and SaaS.
+              Our ArangoDB Drug Discovery Bot accelerates research by biomedical graphs, uncovering hidden drug-target interactions, and optimizing drug repurposing strategies.
             </p>
             <div className="flex flex-wrap justify-center items-center mt-4 max-w-[500px] gap-5">
-              {fields.map((field, index) => (
-                <div
-                  key={field}
-                  style={{
-                    border: `1px solid ${colors[index % colors.length]}`,
-                  }}
-                  className="px-4 py-1.5 rounded-full hover:bg-gray-50 transition-colors cursor-pointer"
-                >
-                  <span>{field}</span>
-                </div>
-              ))}
+            
+              <Button onClick={() => setIsQueryDialogOpen(true)} size="lg" className="bg-blue-600 hover:bg-blue-700 mt-4">
+                <b>Get Query Suggestion</b>
+              </Button>
+
             </div>
           </div>
         ) : (
@@ -265,9 +269,8 @@ const Page = () => {
                     </div>
                   )}
                   <div
-                    className={`inline-block p-4 max-w-[80%] rounded-lg shadow-sm ${
-                      message.sender === "User" ? "bg-primary text-white" : "bg-gray-100 text-gray-800"
-                    }`}
+                    className={`inline-block p-4 max-w-[80%] rounded-lg shadow-sm ${message.sender === "User" ? "bg-primary text-white" : "bg-gray-100 text-gray-800"
+                      }`}
                   >
                     {message.isLoading ? (
                       <div className="flex items-center space-x-2">
@@ -338,7 +341,7 @@ const Page = () => {
               <div className="flex gap-2">
                 <input
                   type="text"
-                  placeholder="Message Integry Langchain Bot"
+                  placeholder="Message ArangoDB Bot"
                   className="w-full bg-[#F1F1F1] h-[60px] text-black outline-none focus:ring-2 focus:ring-primary px-4 rounded-xl pr-12 border-2 border-gray-300"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
@@ -369,9 +372,8 @@ const Page = () => {
                 </TooltipProvider>
               </div>
               <button
-                className={`rounded-full absolute right-[70px] bottom-2 cursor-pointer hover:opacity-70 p-1.5 ${
-                  inputValue.trim() !== "" && !isLoading ? "bg-primary" : "bg-gray-600"
-                }`}
+                className={`rounded-full absolute right-[70px] bottom-2 cursor-pointer hover:opacity-70 p-1.5 ${inputValue.trim() !== "" && !isLoading ? "bg-primary" : "bg-gray-600"
+                  }`}
                 onClick={() => handleSendMessage()}
                 disabled={inputValue.trim() === "" || isLoading}
               >

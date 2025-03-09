@@ -12,9 +12,8 @@ const navItems = [
   { title: "Dashboard", icon: LayoutDashboard, href: "/dashboard" },
   { title: "Chat Bot", icon: Camera, href: "/dashboard/chat" },
   { title: "Data Visualization", icon: User2, href: "/dashboard/visualization" },
-  { title: "Arangodb Graph", icon: User2, href: "/dashboard/roadmap" },
-  { title: "Video Submission", icon: Settings, href: "/dashboard/chat-history" },
-  { title: "Documentation", icon: Settings, href: "/dashboard/chat-history" },
+  { title: "Arangodb Graph Visualization", icon: User2, href: "/dashboard/graphs" },
+  { title: "Documentation", icon: Settings, href: "/dashboard/documentation" },
 ];
 
 export function Navigation() {

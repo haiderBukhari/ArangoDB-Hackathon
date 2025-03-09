@@ -48,9 +48,8 @@ export function RecentActivity() {
     );
   }
 
-  // Map through the messages to create activity entries
   const activities = messages.map((message, index) => ({
-    project: `Prompt ${index + 1}`,  // Naming the prompt based on its position (Prompt 1, Prompt 2, etc.)
+    project: `Prompt ${index + 1}`,
     description: message.text,  // The message text is the description
   }));
 
