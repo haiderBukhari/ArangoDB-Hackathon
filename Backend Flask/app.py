@@ -25,7 +25,7 @@ arango_graph = ArangoGraph(db)
 
 def get_table(query):
     prompt = """
-    You are tasked with formatting the query response into a clean, structured table in HTML format. Remember the table is structured and contains only the information available in the query. Do not write anything explicitly from your side.
+    You are tasked with formatting the query response into a clean, structured table in HTML format. Remember the table is structured and contains only the information available in the query. Do not write anything explicitly from your side. Remember to get the table based on analyzing the query and in each query there must be table structure that can be developed, if it is still very impossible to get table just return the response I am not able to create the visual table.
 
     Query: `Graph-Based Response:
     Here are the top 5 side effects for drugs with a molecular weight greater than 500:
