@@ -23,14 +23,13 @@ export function QuerySuggestionsDialog({ isOpen, onClose, onSelectQuery }: Query
     "Find all drugs which is linked to the gene Atp2a2",
     "Which targets does Drug fluvastatin interact with?",
     "Is Drug selpercatinib approved, and by whom?",
-    "Which drugs are linked to Side Effect Tumour associated fever",
+    "Which drugs are linked to side effect of Tumour associated fever",
     "Which protein structures does Drug glibenclamide bind to",
     "What are the major drug interaction clusters",
     "can you tell me what is the shortest connection between Drug glibenclamide and selpercatinib",
     "Can you find drugs that interact with more than 3 targets",
     "Which drugs with a molecular weight greater than 500 have side effects limit to top 5 result?",
     "can you tell more about the drug palbociclib",
-    "Find the most central nodes in the graph",
   ]
 
   const filteredQueries = suggestedQueries.filter((query) => query.toLowerCase().includes(searchTerm.toLowerCase()))
